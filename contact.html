@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0;"> 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body{
+background-image:url(banner1.png);
+background-color:hsl(0, 100%, 74%);
+margin:0;
+}
+
+img{
+width:80px;
+border-radius:50%;
+}
+
+#banner{
+position:fixed;
+background-color:hsl(248, 32%, 49%);
+width:100%;
+display:flex;
+justify-content:space-around;
+top:0;
+}
+
+h1{
+margin-top:2.5em;
+margin-left:1em;
+color:white;
+text-align:center;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+#contact-form{
+background:white;
+padding:2em;
+margin:2em;
+border-top-right-radius:15px;
+border-top-left-radius:15px;
+margin-bottom:1.5em;
+}
+
+#banner > p{
+font-family: 'Open Sans', sans-serif;
+color:hsl(322, 100%, 66%);
+}
+
+nav{
+margin-top:1em;
+}
+
+ul{
+list-style-type:none;
+padding:0px;
+text-align:center;
+font-size:0.8em;
+width:100%;
+font-family: 'Bai jamjuree', sans-serif;
+}
+
+li{ margin:0em;
+float:left;
+
+}
+
+li a{
+padding:5px;
+text-decoration:none;
+color:white ;
+font-weight:bold;
+}
+
+li a:hover{
+color:black;
+border-bottom:1px solid white;
+}
+
+#fname,#email{
+padding:15px;
+display:block;
+margin:auto;
+width:90%;
+margin-bottom:0.5em;
+border-radius:10px;
+}
+
+#msg{
+padding:15px;
+display:block;
+margin:auto;
+width:90%;
+height:100px;
+margin-bottom:1em;
+border-radius:10px;
+}
+
+
+::placeholder{
+color:hsl(249, 10%, 26%) ;
+font-family: 'Open sans', sans-serif;
+font-size:1.4em;
+font-weight:bold;
+}
+
+
+#select{
+height:35px;
+display:block;
+margin:auto;
+width:90%;
+font-size:15px;
+border-radius:0px;
+
+}
+
+#submit{
+width:100%;
+margin:auto;
+display:block;
+height:50px;
+background-color:hsl(154, 59%, 51%);
+
+}
+
+</style>
+</head>
+<body>
+<div id="banner">
+<img src="face.jpg" alt="face">
+<nav>
+<ul>
+<li >  <a href="aboutme.html">HOME</a> </li>
+<li >   <a href="contact.html">CONTACT </a> </li>
+<li >  <a href="register.html">REGISTER </a> </li>
+<li >  <a href="login.html">LOGIN  </a></li>
+</ul>
+</nav>
+</div>
+
+<h1> Contact Me!</h1>
+<form id="contact-form">
+<label for="fname"></label>
+
+<input id="fname" type="text" placeholder="Full Name" required>
+<br>
+<label for="email"></label>
+<input id="email" type="email" placeholder="Email" required>
+<br>
+<textarea id="msg" placeholder="Type your message" ></textarea>
+<br>
+
+<select id="select">
+<option value="High"> High</value>
+<option value="Medium"> Medium </option>
+<option value="Low"> Low </option>
+<select>
+<br>
+<input id="submit" type="submit">
+
+<p style="text-align:center; color:red;"> Thank you for contacting me.</p>
+
+</form>
+</body>
+</html>
